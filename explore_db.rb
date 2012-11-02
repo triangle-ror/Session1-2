@@ -7,3 +7,8 @@ ActiveRecord::Base.establish_connection(
   :adapter => "sqlite3",
   :database  => "development.sqlite3"
 )
+
+
+class Animal < ActiveRecord::Base
+	validates_presence_of :species
+end
